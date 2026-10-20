@@ -16,8 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preload" as="image" href="img/hero.webp" media="(max-width:759px)">
-<link rel="preload" as="image" href="img/hero-wide.webp" media="(min-width:760px)">
+<link rel="preload" as="image" href="img/hero.webp" media="(max-width:1023px)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
@@ -37,7 +36,7 @@
   --on-dark-soft:#c8cfd8;
   --red:#a92403;         /* the check: fills, text on it is white (7:1); also fine as text on light */
   --red-2:#8e1d02;       /* hover fill */
-  --red-on-dark:#ff9a82; /* red as text or ring on the dark bands */
+  --red-on-dark:#f2735a; /* brick red lifted to read on the dark bands (5.5:1 on deep) */
   --line:rgba(30,37,46,.12);
   --focus:#303945;       /* form hover/focus outline, distinct from the red fill */
   --error:#a92403;
@@ -67,7 +66,6 @@ section{padding:64px 0}
 .on-navy{background:var(--navy);color:var(--on-dark-soft)}
 .on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
 .on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
-.accent{color:var(--red)}
 .on-navy .accent,.on-deep .accent,.hero .accent{color:var(--red-on-dark)}
 .head{display:grid;gap:16px;justify-items:start;max-width:640px}
 .lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:40ch}
@@ -93,18 +91,19 @@ section{padding:64px 0}
 .brand img{width:38px;height:38px;flex:none}
 .brand span{display:flex;flex-direction:column}
 .brand b{font:400 20px/1 var(--display);letter-spacing:.01em;white-space:nowrap}
-.brand small{font:600 10.5px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.brand small{font:600 11px/1 var(--text);letter-spacing:.07em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
 .tel{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
 .tel svg{width:17px;height:17px;flex:none;color:var(--red)}
-@media (max-width:374px){.brand img{width:32px;height:32px}.brand b{font-size:18px}.brand small{font-size:11px;letter-spacing:.06em}.tel{font-size:16px}.tel svg{display:none}}
+@media (max-width:374px){.brand img{width:32px;height:32px}.brand b{font-size:18px}.brand small{letter-spacing:.05em}.tel{font-size:16px}.tel svg{display:none}}
 
 /* ---------- Hero: their own job under a slate overlay ---------- */
 .hero{padding:0;position:relative;background:var(--deep);color:var(--on-dark);overflow:hidden;isolation:isolate}
 .hero-art{position:absolute;inset:0;z-index:-2}
-.hero-art img{width:100%;height:100%;object-fit:cover;object-position:62% 60%}
+.hero-art img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero-card{display:none}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(22,28,36,.84) 0%,rgba(22,28,36,.76) 50%,rgba(22,28,36,.88) 100%)}
 .hero-copy{display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:64px}
-.hero h1{color:#fff;font-size:clamp(44px,12.5vw,84px);line-height:1.02;max-width:11ch}
+.hero h1{color:#fff;font-size:clamp(42px,12vw,84px);line-height:1.02}
 /* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
 .hero h1 .w{display:inline-block;white-space:nowrap}
 .hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
@@ -158,13 +157,16 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
 .chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}
 .chips input:checked+label{background:var(--ink);color:#fff}
+.chips input:checked+label:hover{outline:3px solid var(--focus);outline-offset:2px}
 .err{display:none;font-size:15px;color:var(--error)}
 .field.bad .err{display:block}
 .field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:focus,.field.bad textarea:focus{border-color:var(--error)}
 form .btn-primary{width:100%}
 form .btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 .after{font-size:15px;color:var(--soft)}
-.sent{color:var(--ink);font-weight:600}
+.sent{color:var(--ink);font-weight:600;display:grid;gap:12px;justify-items:start}
+.btn-copy{min-height:48px;font-size:16px;background:var(--field);color:var(--ink)}
+.btn-copy:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 .sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
 @media (max-width:380px){.chips label{padding:0 14px}}
 
@@ -200,8 +202,6 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .tel{font-size:20px}
   section{padding:96px 0}
   .hero-copy{padding-top:104px;padding-bottom:120px}
-  .hero-art img{object-position:70% 50%}
-  .hero::after{background:linear-gradient(90deg,rgba(22,28,36,.88) 0%,rgba(22,28,36,.74) 48%,rgba(22,28,36,.42) 100%)}
   .promise{max-width:none}
   .actions{grid-auto-flow:column;justify-content:start;width:auto}
   .actions .btn{min-width:240px}
@@ -212,6 +212,12 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .work h3{left:20px;right:20px;bottom:18px;font-size:22px}
 }
 @media (min-width:1024px){
+  .hero{background-color:var(--deep);background-image:var(--texture)}
+  .hero-art,.hero::after{display:none}
+  .hero > .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+  .hero-copy{padding-top:88px;padding-bottom:88px}
+  .hero-card{display:block;margin:56px 0;width:100%;max-width:440px;justify-self:end;border-radius:var(--r-card);overflow:hidden;aspect-ratio:4/5;box-shadow:0 24px 60px rgba(0,0,0,.28)}
+  .hero-card img{width:100%;height:100%;object-fit:cover}
   .work{grid-template-columns:repeat(4,1fr)}
   .ask .wrap{grid-template-columns:1fr 1.15fr;gap:64px;align-items:start}
   .ask .head{position:sticky;top:40px}
@@ -229,6 +235,7 @@ input[type=text]:hover,textarea:hover{border-color:var(--focus)}
 .chips label:hover{border-color:var(--focus)}
 form .btn-primary:hover{outline:3px solid var(--focus);outline-offset:3px}
 .sent a:hover{color:var(--red)}
+.btn-copy:hover{border-color:var(--focus)}
 .bigtel:hover{color:var(--red-on-dark)}
 footer a:hover{color:var(--red-on-dark)}
 }
@@ -246,7 +253,7 @@ THESIS: A concrete contractor whose name is the promise. The page shows one of K
 OWN-WORLD: Their own logo: white ground, slate circle (#303945 bands, #1e252e deep bands with faint diagonal lines), brick-red check (#a92403) as the one accent, used as a fill with white text. The hero is their own power trowel on fresh concrete, under a slate overlay. Cal Sans display, system body at 16/1.7.
 STORY: The visitor sees "Concrete work, done right.", finds their job in the list, sees the job done properly step by step, and texts Kasey for a free estimate.
 FIRST VIEWPORT: Paper header with the check mark, name and tap-to-call number top right. Photo hero: eyebrow "Free estimates", H1, one promise line, two pill buttons (Get a free estimate, Text Kasey).
-FORM: calm band system (after lpmr.co.uk) with a real photo hero. No location anywhere until the owner confirms where they work.
+FORM: pinned to the house calm band style (after lpmr.co.uk), not rolled; real photo hero (finished slab behind the copy on phones, the trowel as a photo card on desktop). No location anywhere until the owner confirms where they work.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, DESIGN.md, and a handoff.
 -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -263,26 +270,25 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <main id="top">
 <section class="hero" id="hero" aria-labelledby="h1">
-  <picture class="hero-art">
-    <source media="(min-width:760px)" srcset="img/hero-wide.webp" width="1080" height="640">
-    <img src="img/hero.webp" alt="" width="1080" height="1350" fetchpriority="high">
-  </picture>
-  <div class="wrap hero-copy">
+  <div class="hero-art"><img src="img/hero.webp" alt="" width="1080" height="1350" fetchpriority="high"></div>
+  <div class="wrap">
+  <div class="hero-copy">
     <p class="eyebrow">Free estimates</p>
-    <h1 id="h1">Concrete work, <span class="accent">done right.</span></h1>
-    <p class="promise">Call or text <b>Kasey</b> for a free estimate and get on the schedule.</p>
+    <h1 id="h1">Concrete work,<br> <span class="accent">done right.</span></h1>
+    <p class="promise">Call or text <b>Kasey</b> and we'll get your project on the schedule.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#ask">Get a free estimate</a>
       <a class="btn btn-ghost" data-sms href="sms:+19374079540?&amp;body=Hi%20Kasey%2C%20I%20found%20your%20website.%20I%20need%20concrete%20work%3A%20"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text Kasey</a>
     </div>
+  </div>
+  <div class="hero-card"><img src="img/hero-card.webp" alt="Power trowel finishing a fresh concrete floor" width="864" height="1080" loading="lazy" decoding="async"></div>
   </div>
 </section>
 
 <section class="on-paper" aria-labelledby="h-svc">
   <div class="wrap">
     <div class="head rise">
-      <p class="eyebrow">What we pour</p>
-      <h2 id="h-svc">From basement floors <span class="accent">to garage slabs.</span></h2>
+      <h2 id="h-svc">What we pour</h2>
     </div>
     <nav class="services rise" aria-label="Services">
       <a class="row" href="#ask" data-job="Basement floor">Basement floors<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
@@ -300,10 +306,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <h2 id="h-work">Done right <span class="accent">from the ground up.</span></h2>
     </div>
     <ol class="work">
-      <li class="rise"><img src="img/work-01.webp" alt="Compacted gravel base inside insulated foundation walls, with a plate compactor" width="720" height="900" loading="lazy" decoding="async"><h3><span>01</span>Base packed</h3></li>
-      <li class="rise"><img src="img/work-02.webp" alt="Vapor barrier and wire mesh laid over the base" width="720" height="900" loading="lazy" decoding="async"><h3><span>02</span>Barrier and steel</h3></li>
-      <li class="rise"><img src="img/work-03.webp" alt="Freshly poured concrete floor, still wet" width="720" height="900" loading="lazy" decoding="async"><h3><span>03</span>Poured</h3></li>
-      <li class="rise"><img src="img/work-04.webp" alt="Finished concrete floor with straight saw-cut joints" width="720" height="900" loading="lazy" decoding="async"><h3><span>04</span>Finished slab</h3></li>
+      <li class="rise"><img src="img/work-01.webp" alt="Compacted gravel base inside insulated foundation walls, with a plate compactor" width="720" height="900" loading="lazy" decoding="async"><h3><span aria-hidden="true">01</span>Base packed</h3></li>
+      <li class="rise"><img src="img/work-02.webp" alt="Vapor barrier and wire mesh laid over the base" width="720" height="900" loading="lazy" decoding="async"><h3><span aria-hidden="true">02</span>Barrier and steel</h3></li>
+      <li class="rise"><img src="img/work-03.webp" alt="Power trowel finishing the fresh pour" width="720" height="900" loading="lazy" decoding="async"><h3><span aria-hidden="true">03</span>Poured and troweled</h3></li>
+      <li class="rise"><img src="img/work-04.webp" alt="Finished concrete floor with straight saw-cut joints" width="720" height="900" loading="lazy" decoding="async"><h3><span aria-hidden="true">04</span>Finished slab</h3></li>
     </ol>
     <a class="more-work rise" href="https://www.facebook.com/profile.php?id=100069736130812" rel="noopener">
       <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Click to see more of our work.</span>
@@ -315,12 +321,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-paper ask" id="ask" aria-labelledby="h-ask">
   <div class="wrap">
     <div class="head rise">
-      <p class="eyebrow">Free estimate</p>
-      <h2 id="h-ask">Tell Kasey about <span class="accent">your project.</span></h2>
+      <h2 id="h-ask">Tell Kasey about your project.</h2>
       <ol class="steps">
-        <li><div><b>Text us the job.</b><span>A photo of the spot helps us price it.</span></div></li>
+        <li><div><b>Text us the job.</b><span>Or call, whichever is easier.</span></div></li>
         <li><div><b>Get your free estimate.</b><span>No charge to ask.</span></div></li>
-        <li><div><b>Get on the schedule.</b><span>Then we get it done right.</span></div></li>
+        <li><div><b>Get on the schedule.</b><span>And we get it done right.</span></div></li>
       </ol>
     </div>
     <form id="quoteForm" class="rise" novalidate>
@@ -347,7 +352,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <textarea id="what" name="what" maxlength="600" placeholder="Rough size, what's there now, when you'd like it done…"></textarea>
       </div>
       <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Kasey</button>
-      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call or text Kasey at <a href="tel:+19374079540">(937) 407-9540</a>.</p>
+      <div class="sent" id="sent" role="status" hidden><p>Didn't open your messages? Text or call Kasey at <a href="tel:+19374079540">(937) 407-9540</a>.</p><button class="btn btn-copy" type="button" id="copyMsg">Copy my message</button></div>
       <p class="after">Opens your messages with this written out. Add a photo of the spot before you send.</p>
     </form>
   </div>
@@ -367,7 +372,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <footer>
   <div class="wrap">
-    <span>Done Right Solutions LLC · Outdoor Services · Kasey · <span class="nw">(937) 407-9540</span></span>
+    <span>Done Right Solutions Outdoor Services LLC · Kasey</span>
     <nav aria-label="Elsewhere">
       <a href="https://www.facebook.com/profile.php?id=100069736130812" rel="noopener">Facebook</a>
     </nav>
@@ -422,6 +427,13 @@ document.documentElement.classList.add('js');
 (function(){
   var form=document.getElementById('quoteForm');if(!form)return;
   function val(id){return document.getElementById(id).value.trim()}
+  var lastMsg='';
+  document.getElementById('copyMsg').addEventListener('click',function(){
+    var b=this,no="Couldn't copy here. Text the number above.";
+    // clipboard can be blocked in in-app browsers; the number above still works
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(lastMsg).then(function(){b.textContent='Copied. Paste it into a text to Kasey.'},function(){b.textContent=no});
+    else b.textContent=no;
+  });
   form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim())f.classList.remove('bad')});
   form.addEventListener('submit',function(e){
     e.preventDefault();
@@ -431,9 +443,12 @@ document.documentElement.classList.add('js');
     var msg='Hi '+CONFIG.NAME+', this is '+name+'. I\'d like a free estimate'+(job&&job.value!=='Something else'?' for a '+job.value.toLowerCase():'')+'.';
     if(where)msg+=' I\'m in '+where+'.';
     if(what)msg+=' '+what;
+    lastMsg=msg;
+    var left=false;function gone(){if(document.hidden)left=true}
+    document.addEventListener('visibilitychange',gone);
     location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
     // if no messages app opened (desktop, some in-app browsers), say what to do instead
-    setTimeout(function(){document.getElementById('sent').hidden=false},900);
+    setTimeout(function(){document.removeEventListener('visibilitychange',gone);if(!left)document.getElementById('sent').hidden=false},1200);
   });
 })();
 

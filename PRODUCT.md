@@ -18,7 +18,7 @@ A concrete contractor whose name is the promise: the job done right. The proof i
 - Contact: call or text (937) 407-9540. Texts accepted (stated in their post).
 - No email, no booking system, no backend. The quote form composes a pre-written text message.
 - Photo-upload intake (suggested by Muse) can't be done with `sms:` links; the form asks visitors to add a photo in the text instead.
-- **No location on the page.** The 937 area code is Ohio but the ad ran in an Essex County NJ group. The Facebook page title says "Done Right Solutions LLC | Urbana OH" (fetched 2026-10-19), but the brief says to keep the site location-free until the owner confirms.
+- **No location on the page** until the owner confirms where they work.
 
 ## Brand commitments
 - Name: "Done Right Solutions LLC", with "Outdoor Services" on the logo's banner (logo confirms the suffix is their own branding).
