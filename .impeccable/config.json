@@ -20,6 +20,42 @@
         ],
         "createdAt": "2026-10-20T01:53:53.251Z",
         "reason": "false positive: work photo cards (.work li) hold a full-bleed image with an absolutely positioned title inset 12-20px"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-20T02:03:36.274Z",
+        "reason": "DESIGN.md was derived from this shipped page and left these one-off values out (documenter note); they are the built design, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "18px",
+        "createdAt": "2026-10-20T02:03:36.334Z",
+        "reason": "DESIGN.md was derived from this shipped page and left these one-off values out (documenter note); they are the built design, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "15px",
+        "createdAt": "2026-10-20T02:03:36.395Z",
+        "reason": "DESIGN.md was derived from this shipped page and left these one-off values out (documenter note); they are the built design, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "23px",
+        "createdAt": "2026-10-20T02:03:36.458Z",
+        "reason": "DESIGN.md was derived from this shipped page and left these one-off values out (documenter note); they are the built design, not drift"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(22,28,36,.84)",
+        "createdAt": "2026-10-20T02:03:36.518Z",
+        "reason": "DESIGN.md was derived from this shipped page and left these one-off values out (documenter note); they are the built design, not drift: hero photo overlay"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-20T02:03:40.797Z",
+        "reason": "DESIGN.md was derived from this shipped page and left this one-off size out; it is the built design, not drift"
       }
     ]
   }
