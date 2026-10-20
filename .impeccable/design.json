@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T02:02:54.835581+00:00",
+  "title": "Design System: Done Right Solutions LLC",
+  "extensions": {
+    "colorMeta": {
+      "brick-red": {
+        "role": "primary",
+        "displayName": "Brick Check Red",
+        "canonical": "oklch(47.9% 0.173 33)",
+        "tonalRamp": [
+          "#390000",
+          "#5e0000",
+          "#830000",
+          "#a92403",
+          "#cf4b30",
+          "#f66f52",
+          "#ffa791",
+          "#ffd1ba"
+        ]
+      },
+      "brick-red-deep": {
+        "role": "primary",
+        "displayName": "Fired Brick",
+        "canonical": "oklch(42.2% 0.152 34)",
+        "tonalRamp": [
+          "#340000",
+          "#580000",
+          "#7d0300",
+          "#a1311a",
+          "#c7543c",
+          "#ed775d",
+          "#ffa791",
+          "#ffd1ba"
+        ]
+      },
+      "brick-red-on-dark": {
+        "role": "primary",
+        "displayName": "Ember",
+        "canonical": "oklch(70.1% 0.162 33)",
+        "tonalRamp": [
+          "#370000",
+          "#5b0000",
+          "#800000",
+          "#a52b14",
+          "#cb5038",
+          "#f2735a",
+          "#ffa792",
+          "#ffd1bb"
+        ]
+      },
+      "slate": {
+        "role": "neutral",
+        "displayName": "Slate Circle",
+        "canonical": "oklch(34.1% 0.024 256)",
+        "tonalRamp": [
+          "#050b15",
+          "#1c2530",
+          "#37404d",
+          "#555e6c",
+          "#747e8c",
+          "#959fae",
+          "#bac5d4",
+          "#e4f0ff"
+        ]
+      },
+      "slate-deep": {
+        "role": "neutral",
+        "displayName": "Deep Slate",
+        "canonical": "oklch(26.2% 0.020 255)",
+        "tonalRamp": [
+          "#060c13",
+          "#1e252e",
+          "#39404a",
+          "#565e69",
+          "#767e89",
+          "#969fab",
+          "#bcc5d1",
+          "#e6effc"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(97.0% 0.003 265)",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#232425",
+          "#3f4041",
+          "#5d5e5f",
+          "#7c7d7f",
+          "#9d9ea0",
+          "#c3c4c6",
+          "#edeef0"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Grey",
+        "canonical": "oklch(93.3% 0.007 261)",
+        "tonalRamp": [
+          "#090b0e",
+          "#222428",
+          "#3d4044",
+          "#5b5e62",
+          "#7b7d82",
+          "#9c9ea3",
+          "#c1c4c9",
+          "#eceff4"
+        ]
+      },
+      "body-ink": {
+        "role": "neutral",
+        "displayName": "Body Ink",
+        "canonical": "oklch(33.6% 0.024 251)",
+        "tonalRamp": [
+          "#050c15",
+          "#1b252f",
+          "#37414c",
+          "#545f6b",
+          "#737f8b",
+          "#94a0ad",
+          "#b9c6d3",
+          "#e3f0fe"
+        ]
+      },
+      "soft-ink": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(48.4% 0.024 251)",
+        "tonalRamp": [
+          "#040c15",
+          "#1b252f",
+          "#37414c",
+          "#545f6b",
+          "#737f8b",
+          "#94a0ad",
+          "#b9c6d3",
+          "#e3f0fe"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "On Dark Soft",
+        "canonical": "oklch(85.2% 0.015 255)",
+        "tonalRamp": [
+          "#070b11",
+          "#1f242b",
+          "#3b4048",
+          "#585e66",
+          "#777e86",
+          "#989fa8",
+          "#bec5ce",
+          "#e8eff8"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "White Card",
+        "canonical": "#ffffff"
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On Dark",
+        "canonical": "#f5f6f8"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service rows, step titles, tile captions, feature row."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels and legends; buttons at 18px."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The one line under a heading, max 40ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and inputs."
+      }
+    },
+    "textures": [
+      {
+        "name": "deep-band-lines",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Deep slate bands (work, footer, desktop hero) only."
+      }
+    ],
+    "shadows": [
+      {
+        "name": "float",
+        "value": "0 10px 28px rgba(20,24,30,.32)",
+        "purpose": "Floating text circle above content."
+      },
+      {
+        "name": "hero-card",
+        "value": "0 24px 60px rgba(0,0,0,.28)",
+        "purpose": "Desktop hero photo card off the textured band."
+      }
+    ],
+    "overlays": [
+      {
+        "name": "hero-photo",
+        "value": "linear-gradient(180deg,rgba(22,28,36,.84) 0%,rgba(22,28,36,.76) 50%,rgba(22,28,36,.88) 100%)",
+        "purpose": "Slate overlay on the phone hero photo."
+      },
+      {
+        "name": "tile-fade",
+        "value": "linear-gradient(180deg,transparent,rgba(22,28,36,.9)) from 45% down",
+        "purpose": "Caption legibility on work tiles."
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-light",
+        "value": "3px solid #303945, offset 3px",
+        "purpose": "Focus on light grounds."
+      },
+      {
+        "name": "focus-dark",
+        "value": "3px solid #f2735a, offset 3px",
+        "purpose": "Focus on dark bands, hero and footer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), translateX(50px)->0, 20ms per letter",
+        "purpose": "Hero H1 entrance only; skipped under reduced motion."
+      },
+      {
+        "name": "rise",
+        "value": "opacity + translateY(12px), .4s ease-out",
+        "purpose": "Below-the-fold blocks on first entry."
+      },
+      {
+        "name": "float-in",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Floating text circle show/hide."
+      },
+      {
+        "name": "state",
+        "value": ".15s-.2s",
+        "purpose": "Colour and border state changes."
+      },
+      {
+        "name": "press",
+        "value": "scale(.98), .12s",
+        "purpose": "Button press."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small-phone",
+        "value": "max-width 374-380px"
+      },
+      {
+        "name": "tablet",
+        "value": "760px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one brick-red ask per view: free estimate, text this to Kasey.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Get a free estimate</a>",
+      "css": ":host{--paper:#f4f5f7;--card:#fff;--field:#e6e9ee;--ink:#1e252e;--soft:#55606c;--navy:#303945;--deep:#1e252e;--on-dark:#f5f6f8;--red:#a92403;--red-2:#8e1d02;--red-on-dark:#f2735a;--focus:#303945;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn-primary{background:var(--red);color:#fff;border-color:var(--red)}.ds-btn-primary:hover{background:var(--red-2);border-color:var(--red-2)}.ds-btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on the dark hero only.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text Kasey</a></div>",
+      "css": ":host{--paper:#f4f5f7;--card:#fff;--field:#e6e9ee;--ink:#1e252e;--soft:#55606c;--navy:#303945;--deep:#1e252e;--on-dark:#f5f6f8;--red:#a92403;--red-2:#8e1d02;--red-on-dark:#f2735a;--focus:#303945;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-dark{background:var(--deep);padding:24px}.ds-btn-ghost{background:rgba(30,37,46,.25);color:var(--on-dark);border-color:rgba(245,246,248,.75)}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}.ds-btn-ghost:focus-visible{outline:3px solid var(--red-on-dark);outline-offset:3px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "nav",
+      "refersTo": "service-row",
+      "description": "White row link on paper; only the arrow circle responds.",
+      "html": "<div class=\"ds-paper\"><a class=\"ds-row\" href=\"#\">Basement floors<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ":host{--paper:#f4f5f7;--card:#fff;--field:#e6e9ee;--ink:#1e252e;--soft:#55606c;--navy:#303945;--deep:#1e252e;--on-dark:#f5f6f8;--red:#a92403;--red-2:#8e1d02;--red-on-dark:#f2735a;--focus:#303945;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif}.ds-paper{background:var(--paper);padding:20px}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;padding:12px 14px 12px 22px;background:var(--card);border-radius:18px;color:var(--ink);text-decoration:none;font:400 21px/1.2 var(--display)}.ds-row:focus-visible{outline:none}.ds-arrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(30,37,46,.07);color:var(--ink);transition:background-color .2s,color .2s}.ds-row:hover .ds-arrow{background:var(--red);color:#fff}.ds-row:focus-visible .ds-arrow{background:var(--red);color:#fff;outline:3px solid var(--focus);outline-offset:3px}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Field Grey fill on the white form card; slate border on hover and focus.",
+      "html": "<div class=\"ds-card\"><label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" placeholder=\"First name is fine\"></div>",
+      "css": ":host{--paper:#f4f5f7;--card:#fff;--field:#e6e9ee;--ink:#1e252e;--soft:#55606c;--navy:#303945;--deep:#1e252e;--on-dark:#f5f6f8;--red:#a92403;--red-2:#8e1d02;--red-on-dark:#f2735a;--focus:#303945;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif}.ds-card{background:var(--card);border-radius:24px;padding:24px;display:grid;gap:8px}.ds-label{font:400 17px/1.2 var(--display);color:var(--ink)}.ds-input{width:100%;box-sizing:border-box;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;caret-color:var(--red);transition:border-color .15s}.ds-input::placeholder{color:var(--soft)}.ds-input:hover,.ds-input:focus{outline:none;border-color:var(--focus)}"
+    },
+    {
+      "name": "Job Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio chips for the job type; selected fills deep slate.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-chips\"><input type=\"radio\" name=\"ds-j\" id=\"ds-c1\" checked><label for=\"ds-c1\">Basement floor</label><input type=\"radio\" name=\"ds-j\" id=\"ds-c2\"><label for=\"ds-c2\">Patio</label></div></div>",
+      "css": ":host{--paper:#f4f5f7;--card:#fff;--field:#e6e9ee;--ink:#1e252e;--soft:#55606c;--navy:#303945;--deep:#1e252e;--on-dark:#f5f6f8;--red:#a92403;--red-2:#8e1d02;--red-on-dark:#f2735a;--focus:#303945;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif}.ds-card{background:var(--card);border-radius:24px;padding:24px}.ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chips input{position:absolute;opacity:0;width:1px;height:1px}.ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s}.ds-chips label:hover{border-color:var(--focus)}.ds-chips input:checked+label{background:var(--ink);color:#fff}.ds-chips input:checked+label:hover,.ds-chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}"
+    },
+    {
+      "name": "Work Tile",
+      "kind": "card",
+      "refersTo": "",
+      "description": "4:5 job photo with slate bottom fade, Ember stage number and white caption.",
+      "html": "<div class=\"ds-tile\"><div class=\"ds-ph\"></div><h3><span>03</span>Poured and troweled</h3></div>",
+      "css": ":host{--paper:#f4f5f7;--card:#fff;--field:#e6e9ee;--ink:#1e252e;--soft:#55606c;--navy:#303945;--deep:#1e252e;--on-dark:#f5f6f8;--red:#a92403;--red-2:#8e1d02;--red-on-dark:#f2735a;--focus:#303945;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif}.ds-tile{position:relative;overflow:hidden;border-radius:20px;aspect-ratio:4/5;width:220px;background:var(--navy)}.ds-ph{position:absolute;inset:0;background:#7d7a74}.ds-tile::after{content:'';position:absolute;inset:45% 0 0;background:linear-gradient(180deg,transparent,rgba(22,28,36,.9))}.ds-tile h3{position:absolute;left:14px;right:12px;bottom:12px;z-index:1;margin:0;display:grid;gap:4px;color:#fff;font:400 18px/1.1 var(--display)}.ds-tile h3 span{font:400 14px/1 var(--display);color:var(--red-on-dark)}"
+    },
+    {
+      "name": "Feature Row",
+      "kind": "custom",
+      "refersTo": "feature-row",
+      "description": "The single brick-red link row after the work tiles; arrow inverts to white on hover.",
+      "html": "<a class=\"ds-more\" href=\"#\"><span>Click to see more of our work.</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a>",
+      "css": ":host{--paper:#f4f5f7;--card:#fff;--field:#e6e9ee;--ink:#1e252e;--soft:#55606c;--navy:#303945;--deep:#1e252e;--on-dark:#f5f6f8;--red:#a92403;--red-2:#8e1d02;--red-on-dark:#f2735a;--focus:#303945;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif}.ds-more{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--red);color:#fff;text-decoration:none;font:400 21px/1.2 var(--display);max-width:560px}.ds-arrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.16);color:#fff;transition:background-color .2s,color .2s}.ds-more:hover .ds-arrow{background:#fff;color:var(--red)}.ds-more:focus-visible{outline:none}.ds-more:focus-visible .ds-arrow{background:#fff;color:var(--red);outline:3px solid var(--red-on-dark);outline-offset:3px}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "custom",
+      "refersTo": "float-text",
+      "description": "60px brick-red circle that opens a pre-filled text; the only floating element.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Text Kasey\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ":host{--paper:#f4f5f7;--card:#fff;--field:#e6e9ee;--ink:#1e252e;--soft:#55606c;--navy:#303945;--deep:#1e252e;--on-dark:#f5f6f8;--red:#a92403;--red-2:#8e1d02;--red-on-dark:#f2735a;--focus:#303945;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif}.ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#fff;box-shadow:0 10px 28px rgba(20,24,30,.32)}.ds-float:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Finished Slab",
+    "overview": "**Creative North Star: \"The Finished Slab\"**\n\nThe page is built from the company's own logo: a white ground, the slate circle and the brick-red check. Everything is soft-cornered, borderless and flat, like a troweled floor; the only texture is a faint diagonal line on the deepest bands. Full-bleed bands alternate light and dark so each section reads as its own pour. Proof is the job itself, in real photographs, never illustration.\n\nDensity is low and phone-first: one column, large tap targets, one accent doing all the asking. The brick red appears only where the visitor is meant to act or where the eye should land, so its rarity carries the call to action.",
+    "keyCharacteristics": [
+      "Paper, slate and deep-slate bands; brick red as the single accent.",
+      "One display face (Cal Sans) for headings, labels and buttons; system sans for reading.",
+      "Soft radii (10 to 24px) and pills; no borders at rest, no decorative shadows.",
+      "Real job photography under a slate overlay or in 4:5 tiles.",
+      "Calm motion: one hero headline entrance, one 12px fade-up, nothing else."
+    ],
+    "rules": [
+      {
+        "name": "The One Check Rule",
+        "body": "Brick red is the only chromatic colour on the page. Nothing else gets hue; new emphasis comes from slate weight or white space.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fill-Not-Ink Rule",
+        "body": "On light grounds brick red is a fill with white text. On dark grounds it never fills text; use Ember instead.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Shade Rule",
+        "body": "Text in red on a dark band is always Ember (#f2735a); text in red on paper or white is Brick Check Red. Never swap them.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Weight Rule",
+        "body": "Cal Sans is only ever used at 400. Hierarchy comes from size, not weight.",
+        "section": "typography"
+      },
+      {
+        "name": "The Display-Speaks Rule",
+        "body": "Anything the visitor taps or reads as a heading (buttons, rows, labels, phone numbers) is set in Cal Sans; paragraphs are system sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The Phone-First Rule",
+        "body": "Every layout is designed at 390px first; desktop only adds columns. Tap targets are 44px or larger everywhere.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Band Rule",
+        "body": "Rows, cards, fields and buttons carry no shadow at rest or on hover. A shadow means \"this floats above the page\", nothing else.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** use Brick Check Red as a fill with white text on light grounds, and Ember (#f2735a) for red text or icons on dark bands.",
+      "**Do** alternate full-bleed bands so no two neighbours share a ground, with the diagonal line texture (`repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.035) 22px 23px)`) on deep slate only.",
+      "**Do** set headings, buttons, rows and labels in Cal Sans 400 and body in the system stack at 16/1.7.",
+      "**Do** fill form fields with Field Grey (#e6e9ee) on the white card, and show hover and focus as a slate outline or border.",
+      "**Do** keep hover effects inside `@media (hover:hover)` and limit row hovers to the arrow circle.",
+      "**Do** use the business's own job photos, cropped with `object-fit: cover` and darkened until white text passes 4.5:1."
+    ],
+    "donts": [
+      "**Don't** introduce a second accent hue or any gradient beyond the slate photo overlays and the deep-band line texture.",
+      "**Don't** put brick red text on deep slate or slate; it fails contrast. Use Ember.",
+      "**Don't** add shadows to rows, cards, chips or buttons.",
+      "**Don't** use bold or other weights of Cal Sans.",
+      "**Don't** animate any heading other than the hero H1, or add parallax, carousels or counters.",
+      "**Don't** replace the floating text circle with a bottom bar, or show it while the form is in view."
+    ]
+  }
+}
